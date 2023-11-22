@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="navbar">
+<div class="dropdown">
+	<a href="" color="white">Home</a>
+ 	<a href="https://rmd.ac.in/placement/placement.html" color="white">Placements&Training</a>
+	<a href="" color="white">Vision</a>
+	<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+ 	 <div id="myDropdown" class="dropdown-content">  
+ 	 <a href="https://rmd.ac.in/dept/ece/index.html">ECE</a>
+	  <a href="https://rmd.ac.in/dept/eee/index.html">EEE</a>
+  	<a href="https://rmd.ac.in/dept/cse/index.html">CSE</a>
+ 	<a href="https://rmd.ac.in/dept/it/index.html">IT</a>
+	
+ </div>
+  </div>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+
+/* Style the header */
+.header {
+  padding: 120px;
+  text-align: center;
+  background: #bc1a83;
+  color: white;
+  
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+
+ 
+.navbar a:hover {
+  background-color: pink;
+  color: red;
+}
+
+p
+{
+    text-align:justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased !important;
+    line-height: 24px;
+    font-weight: 700;
+     
+}
+ul {
+	color: white;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased !important
+}
+</style>
+</head>
+<body>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+<div class="header">
+	<h1>Vision and Mission<h1>
+	<img src="vision.jpg" width="50%" height="10%">
+	<h1>Vision</h3>
+	<ul>
+		<li align="justify">RMDEC aspires to be a premier institution offering quality technical education and research with application expertise in Engineering and Technology.</li>
+		
+	</ul>
+	<h1>Misison</h3>
+		<ul>
+	<li align="justify">Develop the students as outstanding professionals by creating an environment that would nurture creativity, academic excellence, professionalism, high standard of ethics, sense of responsibility and respect for individuals. </li>
+<br>
+	<li align="justify">Provide an efficient academic and research environment.</li><br>
+<li align="justify">Interact with corporates, industries and research institutions to work on collaborative projects and sponsored research.</li><br>
+<li align="justify">Establish centers of excellence to impart Domain Specific industry skills.</li><br>
+<li align="justify">Contribute more to the education and training of rural folk as societal obligation.</li>
+		</ul>
+
+	
+</div>
+
+
+</body>
+</html>

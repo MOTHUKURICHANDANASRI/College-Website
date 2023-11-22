@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="navbar">
+<div class="dropdown">
+	<a href="" color="white">Home</a>
+ 	<a href="placement.html" color="white">Placements&Training</a>
+	<a href="vission.html" color="white">Vision</a>
+	<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+ 	 <div id="myDropdown" class="dropdown-content">  
+ 	 <a href="https://rmd.ac.in/dept/ece/index.html">ECE</a>
+	  <a href="https://rmd.ac.in/dept/eee/index.html">EEE</a>
+  	<a href="https://rmd.ac.in/dept/cse/index.html">CSE</a>
+ 	<a href="https://rmd.ac.in/dept/it/index.html">IT</a>
+	
+ </div>
+  </div>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+
+/* Style the header */
+.header {
+  padding: 120px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+
+ 
+.navbar a:hover {
+  background-color: pink;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+<div class="header">
+<img src="rmd.jpg" width="10%" height="10%">
+  <h1>RMD</h1>
+  <h1>Welcome to RMD Engineering College </h1>
+</div>
+
+
+</body>
+</html>
